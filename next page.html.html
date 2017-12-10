@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INSURANCE COMPANY</title>
+<link href="css/code3.css" rel="stylesheet" type= "text/css" >
+
+</head>
+<body onload="initializePage()">
+<form action="javascript:calculateInsurance()">
+	<table align="center">
+		<tr>
+			<th colspan="6"> <span class="styleForFirstPart">Insurance</span> <span class="styleForSndPart">Company</span> </th>	
+		</tr>
+		<tr>			
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td><label for="name"><span class="styleColorWhite">Your Name:</span></label>
+		  </td>
+		  <td><input type="text" name="name" id="name" value="" />
+		  </td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		</tr>	
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td><label for="age"><span class="styleColorWhite">Age: </span></label>
+		  </td>
+		  <td><input type="text" name="age" id="age" value="">
+		  </td>	
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		</tr>	
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>	
+		  <td><label for="country"><span class="styleColorWhite">Country: </span></label>
+		  </td>
+		  <td><input type="text" name="country" id="country" value="" />
+		  </td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		</tr>	
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td><label for="horsepower"><span class="styleColorWhite">Horsepower: </span></label>
+		  </td>
+		  <td><input type="text" name="horsepower" id="horsepower" value="" />
+		  </td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		  <td>	
+			<label><span>&nbsp;</span></label> 
+		  </td>
+		  <td>
+			<button type="submit" onclick="calculateInsurance()" class="likeAButton">calculate</button>
+		  </td>
+		  <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+		</tr>
+	</table>
+</form>
+<p id="onlyParagraph"></p>
+
+
+<script >
+	var name =  "John Doe";
+	var age = 20;
+	var country = "Austria";
+	var horse_power =  150;
+	function initializePage() {
+		document.getElementById("name").value = name;
+		document.getElementById("age").value = age;
+		document.getElementById("country").value = country;
+		document.getElementById("horsepower").value = horse_power;
+	}
+	function calculateInsurance() {
+		name = document.getElementById("name").value;
+		age = document.getElementById("age").value;
+		country = document.getElementById("country").value;
+		horse_power =  document.getElementById("horsepower").value;		
+ 		document.getElementById("onlyParagraph").innerHTML = horse_power * 100 / age + 150;
+ 		return false;
+	}
+</script>
+</body>
+</html>

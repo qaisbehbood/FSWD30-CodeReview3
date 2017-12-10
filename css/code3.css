@@ -1,0 +1,78 @@
+h2 {
+	color: #483D8B;
+}
+
+img {
+	width: 300px;
+	height:250px;
+}
+
+th {
+	font-size: 2em;
+	background-color: #F5F5F5;
+	padding: 20px;
+
+}
+
+body {
+	font-family: sans-serif;
+	font-size:1em;
+	text-align: center;
+	background-color:#FFFAF0; 
+
+}
+table {
+	background-color:#008B8B;
+	width: 60%;
+}
+
+td {
+	padding:25px;
+}
+
+input {
+	font-size: 18px;
+	border-bottom-color: #b3b3b3;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #b3b3b3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #b3b3b3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #b3b3b3;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-style: solid;
+    border-top-width: 1px;`
+}
+
+.styleForFirstPart{
+	color:#FF7F50;
+}
+.styleForSndPart{
+	color:#FF7F50;
+	font-weight: bold;
+}
+
+.styleColorWhite {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.likeAButton {
+  	font: bold 20px Arial;
+  	text-decoration: none;
+  	background-color: #EEEEEE;
+  	color: #483D8B;
+  	padding: 10px 20px 10px 20px;
+  	border-top: 1px solid #CCCCCC;
+  	border-right: 1px solid #333333;
+  	border-bottom: 1px solid #333333;
+  	border-left: 1px solid #CCCCCC;
+  	border-radius: 12px;
+}
